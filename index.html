@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NPTEL IoT MCQ Quiz</title>
+    <title>NPTEL IoT MCQ Quiz - Unique Questions</title>
     <style>
         * {
             box-sizing: border-box;
@@ -11,14 +12,14 @@
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
-        
+
         body {
             background-color: #f5f7fa;
             color: #333;
             line-height: 1.6;
             padding: 20px;
         }
-        
+
         .container {
             max-width: 1000px;
             margin: 0 auto;
@@ -27,24 +28,24 @@
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
             padding: 30px;
         }
-        
+
         header {
             text-align: center;
             margin-bottom: 30px;
             padding-bottom: 20px;
             border-bottom: 1px solid #eaeaea;
         }
-        
+
         h1 {
             color: #2c3e50;
             margin-bottom: 10px;
         }
-        
+
         .subtitle {
             color: #7f8c8d;
             font-size: 1.1rem;
         }
-        
+
         .instructions {
             background-color: #e8f4fc;
             padding: 15px;
@@ -52,51 +53,51 @@
             margin-bottom: 25px;
             border-left: 4px solid #3498db;
         }
-        
+
         .instructions h3 {
             color: #2980b9;
             margin-bottom: 10px;
         }
-        
+
         .quiz-form {
             margin-bottom: 30px;
         }
-        
+
         .question-card {
             background-color: white;
             border: 1px solid #e1e8ed;
             border-radius: 8px;
             padding: 20px;
             margin-bottom: 25px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
         }
-        
+
         .question-text {
             font-weight: 600;
             margin-bottom: 15px;
             color: #2c3e50;
             font-size: 1.1rem;
         }
-        
+
         .options {
             margin-left: 10px;
         }
-        
+
         .option {
             margin-bottom: 10px;
             display: flex;
             align-items: flex-start;
         }
-        
+
         .option input {
             margin-right: 10px;
             margin-top: 5px;
         }
-        
+
         .option label {
             cursor: pointer;
         }
-        
+
         .correct-answer {
             background-color: #d4edda;
             border: 1px solid #c3e6cb;
@@ -105,12 +106,12 @@
             margin-top: 10px;
             display: none;
         }
-        
+
         .correct {
             color: #155724;
             font-weight: 600;
         }
-        
+
         .score-container {
             background-color: #f8f9fa;
             padding: 20px;
@@ -119,19 +120,19 @@
             margin-bottom: 30px;
             display: none;
         }
-        
+
         .score {
             font-size: 2.5rem;
             font-weight: bold;
             color: #2c3e50;
             margin: 10px 0;
         }
-        
+
         .score-text {
             font-size: 1.2rem;
             color: #7f8c8d;
         }
-        
+
         .btn {
             background-color: #3498db;
             color: white;
@@ -144,60 +145,63 @@
             display: block;
             margin: 0 auto;
         }
-        
+
         .btn:hover {
             background-color: #2980b9;
         }
-        
+
         .footer {
             text-align: center;
             margin-top: 30px;
             color: #7f8c8d;
             font-size: 0.9rem;
         }
-        
+
         @media (max-width: 768px) {
             .container {
                 padding: 15px;
             }
-            
+
             .question-card {
                 padding: 15px;
             }
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
-            <h1>NPTEL IoT MCQ Quiz</h1>
-            <p class="subtitle">Introduction to Internet of Things - All Weeks Assignment Questions</p>
+            <h1>NPTEL IoT MCQ Quiz 180 </h1>
+            <p class="subtitle">Introduction to Internet of Things - All Unique Questions</p>
         </header>
-        
+
         <div class="instructions">
             <h3>Instructions</h3>
-            <p>This quiz contains all MCQ questions from the NPTEL IoT course assignments. Questions are displayed in random order. Select your answers and click "Submit Quiz" to see your score and the correct answers.</p>
+            <p>This quiz contains all unique MCQ questions from the NPTEL IoT course assignments. Questions are
+                displayed in random order with no repetitions. Select your answers and click "Submit Quiz" to see your
+                score and the correct answers.</p>
         </div>
-        
+
         <div class="score-container" id="scoreContainer">
             <h2>Your Score</h2>
             <div class="score" id="scoreDisplay">0/0</div>
             <p class="score-text" id="scoreText"></p>
         </div>
-        
+
         <form class="quiz-form" id="quizForm">
             <!-- Questions will be dynamically inserted here -->
         </form>
-        
+
         <button class="btn" id="submitBtn">Submit Quiz</button>
-        
+
         <div class="footer">
             <p>Based on NPTEL "Introduction to Internet of Things" Course Assignments</p>
         </div>
     </div>
 
     <script>
-        // MCQ data from the PDF
+        // MCQ data from the PDF - Only unique questions
         const mcqData = [
             // Week 1
             {
@@ -290,7 +294,7 @@
                 correctAnswer: 3,
                 week: 1
             },
-            
+
             // Week 2
             {
                 question: "The full form of MQTT is",
@@ -382,7 +386,7 @@
                 correctAnswer: 1,
                 week: 2
             },
-            
+
             // Week 3
             {
                 question: "HART operates only in ______ GHz ISM band.",
@@ -474,7 +478,7 @@
                 correctAnswer: 0,
                 week: 3
             },
-            
+
             // Week 4
             {
                 question: "If transmission range > 2* sensing range,",
@@ -566,7 +570,7 @@
                 correctAnswer: 1,
                 week: 4
             },
-            
+
             // Week 5
             {
                 question: "Why interoperability in IoT is an issue?",
@@ -658,7 +662,7 @@
                 correctAnswer: 2,
                 week: 5
             },
-            
+
             // Week 6
             {
                 question: "Python programming language can be easily interfaced with different IoT hardware?",
@@ -750,7 +754,7 @@
                 correctAnswer: 1,
                 week: 6
             },
-            
+
             // Week 7
             {
                 question: "A Raspberry Pi can read data from a sensor but cannot send it over to a remote server for further processing.",
@@ -842,7 +846,7 @@
                 correctAnswer: 1,
                 week: 7
             },
-            
+
             // Week 8
             {
                 question: "Which of the following is true with respect to Network Virtualization?",
@@ -851,455 +855,455 @@
                 week: 8
             },
             {
-                question: "For which of the following reasons, network virtualization is important for IoT?",
-                options: ["It allows multiple virtual networks to co-exist on the same physical network", "It allows multiple physical networks to co-exist on the same virtual network", "It allows the virtual network to be physically separated from the physical network", "It allows the virtual network to be physically separated from the physical network"],
-                correctAnswer: 0,
-                week: 8
-            },
-            {
-                question: "Which among the following is a valid example of a Network Virtualization Platform?",
-                options: ["Node-RED", "OpenVirteX", "OpenDayLight", "OpenStack"],
-                correctAnswer: 1,
-                week: 8
-            },
-            {
-                question: "Which of the following is a valid example of a Network Function Virtualization (NFV) Orchestrator?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenMANO"],
-                correctAnswer: 3,
-                week: 8
-            },
-            {
-                question: "Which among the following is a valid example of a SDN Controller?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenMANO"],
-                correctAnswer: 1,
-                week: 8
-            },
-            {
-                question: "Which of the following is a valid example of a Cloud Management Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenMANO"],
-                correctAnswer: 0,
-                week: 8
-            },
-            {
-                question: "Which among the following is a valid example of a Network Operating System?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenMANO"],
-                correctAnswer: 1,
-                week: 8
-            },
-            {
-                question: "Which among the following is a valid example of a Network Hypervisor?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenMANO"],
+                question: "For rule placement at the edge with respect to Software Defined IoT, which of the following is a critical issue that is required to be addressed?",
+                options: ["Existence of IoT nodes", "Data through routers", "Mobility of end users and nodes", "None of the given."],
                 correctAnswer: 2,
                 week: 8
             },
             {
-                question: "Which of the following is a valid example of a Virtual Infrastructure Manager?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenMANO"],
+                question: "Which cloud service model allows users to deploy and control their own software, including operating systems, while the provider manages the infrastructure?",
+                options: ["SaaS", "PaaS", "IaaS", "DBaaS"],
+                correctAnswer: 2,
+                week: 8
+            },
+            {
+                question: "Which of the following is NOT a characteristic of Platform-as-a-Service (PaaS)?",
+                options: ["Provides tools for application deployment", "Requires users to manage the virtual machines", "Offers elastic scaling of applications", "Simplifies development by abstracting the infrastructure"],
+                correctAnswer: 1,
+                week: 8
+            },
+            {
+                question: "Which essential characteristic of cloud computing refers to the ability of resources to be scaled up or down automatically?",
+                options: ["Resource pooling", "Broad network access", "Elasticity", "None of the given"],
+                correctAnswer: 2,
+                week: 8
+            },
+            {
+                question: "An organization A wants to deploy a cloud infrastructure, whereby it wants to push majority of the data to a cloud whose servers can be situated anywhere within the globe, but it wants certain private data to be pushed only to cloud servers that are present on-premise and are accessible by only authenticated members of the organization. In this context which among the following deployment model should be used?",
+                options: ["Private Cloud", "Public Cloud", "Hybrid Cloud", "Any of these"],
+                correctAnswer: 2,
+                week: 8
+            },
+            {
+                question: "A Private Cloud deployment model cannot provide IaaS but can provide PaaS.",
+                options: ["False", "True"],
                 correctAnswer: 0,
                 week: 8
             },
             {
-                question: "Which of the following is a valid example of a VNF Manager?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenMANO"],
-                correctAnswer: 3,
-                week: 8
-            },
-            {
-                question: "Which among the following is a valid example of a SDN Controller?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenMANO"],
+                question: "What is the primary function of a Light Virtual Access Point (LVAP) in the ODIN architecture for SDN-based IoT?",
+                options: ["Acts as a firewall between user devices and access points", "Enables virtualization of Wi-Fi APs for per-client network control", "Encrypts user traffic before forwarding to the cloud", "Controls routing at the backbone of the network"],
                 correctAnswer: 1,
                 week: 8
             },
             {
-                question: "Which of the following is a valid example of a Network Function Virtualization (NFV) Orchestrator?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenMANO"],
-                correctAnswer: 3,
-                week: 8
-            },
-            {
-                question: "Which among the following is a valid example of a Network Virtualization Platform?",
-                options: ["Node-RED", "OpenVirteX", "OpenDayLight", "OpenStack"],
+                question: "With respect to Virtualization, if one VM runs on a hypervisor, another VM is unable to use the hypervisor.",
+                options: ["True", "False"],
                 correctAnswer: 1,
                 week: 8
             },
             {
-                question: "Which of the following is true with respect to Network Virtualization?",
-                options: ["It abstracts the virtual network on a physical network", "It abstracts the physical network on a virtual network", "It is essentially a collection of physical SDN routers", "Network virtualization is a non-existent concept."],
-                correctAnswer: 1,
-                week: 8
-            },
-            {
-                question: "For which of the following reasons, network virtualization is important for IoT?",
-                options: ["It allows multiple virtual networks to co-exist on the same physical network", "It allows multiple physical networks to co-exist on the same virtual network", "It allows the virtual network to be physically separated from the physical network", "It allows the virtual network to be physically separated from the physical network"],
+                question: "Through which of the following cloud service model, do you use an image editing application without explicitly installing the said application on your local system?",
+                options: ["SaaS", "PaaS", "IaaS", "DaaS"],
                 correctAnswer: 0,
                 week: 8
             },
-            
+            {
+                question: "Which of the following best defines 'measured service' in cloud computing?",
+                options: ["Cloud resources are billed only annually", "Users must request reports manually for resource usage", "Cloud systems automatically control and optimize resources based on metering", "None of the given"],
+                correctAnswer: 2,
+                week: 8
+            },
+            {
+                question: "With respect to Cloud security, which of the following is expected to have a higher level of security than the other in a very generic sense, on the assumption that on-premise data storage generally is more secure than off-premise data storage.",
+                options: ["Public Cloud", "Private Cloud"],
+                correctAnswer: 1,
+                week: 8
+            },
+            {
+                question: "Data security and client authentication is an issue in which of the following cloud service models?",
+                options: ["SaaS", "SaaS and PaaS", "IaaS", "All of them"],
+                correctAnswer: 3,
+                week: 8
+            },
+            {
+                question: "In cloud computing, the users have specific knowledge about the exact physical location of the computing hardware with respect to the cloud services.",
+                options: ["True", "False"],
+                correctAnswer: 1,
+                week: 8
+            },
+            {
+                question: "GreenCloud implementation focuses most on which of the following aspects?",
+                options: ["Scalability", "Energy", "Reversibility", "Computation"],
+                correctAnswer: 1,
+                week: 8
+            },
+
             // Week 9
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Fog is the layer between which two layers?",
+                options: ["Application and Presentation", "Network and Transport", "Cloud and IoT", "Transport and Session"],
+                correctAnswer: 2,
+                week: 9
+            },
+            {
+                question: "Which of the following is/are the actors in sensor-cloud?",
+                options: ["Users", "Sensor-owner", "SCSP", "All of the above"],
                 correctAnswer: 3,
                 week: 9
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Which of the following are considered key limitations of Wireless Sensor Networks (WSNs)?",
+                options: ["Cost of sensor nodes", "Physical deployment of sensors", "Both a and b", "Neither a nor b"],
+                correctAnswer: 2,
+                week: 9
+            },
+            {
+                question: "Which of the following takes the decision whether the data should be provided directly to the end user or is it required to re-cache the data from external cache?",
+                options: ["User cache", "Sensor cache", "External cache", "Internal Cache"],
                 correctAnswer: 3,
                 week: 9
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Fill in the blanks: The ______ extends the cloud nearer the IoT devices.",
+                options: ["Sensors", "Fogging", "Neither a nor b", "Both a and b"],
+                correctAnswer: 1,
+                week: 9
+            },
+            {
+                question: "Which of the following is/are the types of data with respect to sensitivity.",
+                options: ["Time-sensitive", "Less time-sensitive", "Not time-sensitive", "All of these"],
                 correctAnswer: 3,
                 week: 9
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Who coined the term Fog computing?",
+                options: ["IBM", "CISCO", "Both a and b", "Neither a nor b"],
+                correctAnswer: 1,
+                week: 9
+            },
+            {
+                question: "What of the following is an advantage of fog computing?",
+                options: ["Anywhere deployability", "Mobility", "Both a and b", "Neither a nor b"],
+                correctAnswer: 2,
+                week: 9
+            },
+            {
+                question: "State True or False: Openstack is an open-source software.",
+                options: ["True", "False"],
+                correctAnswer: 0,
+                week: 9
+            },
+            {
+                question: "To what are the fog nodes connected to?",
+                options: ["IoT devices", "Cloud", "Neither a nor b", "Both a and b"],
                 correctAnswer: 3,
                 week: 9
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Which of the following reduces danger and increases output?",
+                options: ["Static analysis", "Static decision making", "Both a and b", "Neither a nor b"],
                 correctAnswer: 3,
                 week: 9
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "Fill in the blanks. Fog computing is an intermediate layer between ______ and ______.",
+                options: ["Dew and devices", "Cloud and devices", "Cloud and server", "None of these"],
+                correctAnswer: 1,
                 week: 9
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "Unnecessary sensing causes energy consumption.",
+                options: ["True", "False"],
+                correctAnswer: 0,
                 week: 9
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "Which of the following is used by the fog applications to increase the speed of service accessibility?",
+                options: ["Low power", "Good network connection", "Accelerators", "Analytics"],
+                correctAnswer: 2,
                 week: 9
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "Fill in the blank. The concept of ______ enables physical hardware to be shared among multiple entities.",
+                options: ["Hardware virtualization", "Software virtualization", "Module virtualization", "All of these"],
+                correctAnswer: 0,
                 week: 9
             },
-            {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 9
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 9
-            },
-            {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 9
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 9
-            },
-            {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 9
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 9
-            },
-            
+
             // Week 10
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "DLNA (used in HAN standards) expands to:",
+                options: ["Digital Lifestyle Network Alliance", "Digital Living Network Alliance", "Digital Lifestyle Network Algorithm", "None of these"],
+                correctAnswer: 1,
+                week: 10
+            },
+            {
+                question: "Which property best characterizes V2X?",
+                options: ["Restricted to a single source", "Distributed architecture", "Both a and b", "Neither a nor b"],
+                correctAnswer: 1,
+                week: 10
+            },
+            {
+                question: "Which set correctly captures smart-home functionality?",
+                options: ["Health monitoring only", "Security only", "Both health monitoring and security", "Neither"],
+                correctAnswer: 2,
+                week: 10
+            },
+            {
+                question: "Which are valid types of sensing?",
+                options: ["Stationary", "Mobile", "Both a and b", "None of these"],
+                correctAnswer: 2,
+                week: 10
+            },
+            {
+                question: "Which layers are part of the Zigbee stack?",
+                options: ["Physical and transport", "MAC and transport", "Network and MAC", "Transport and MAC"],
+                correctAnswer: 2,
+                week: 10
+            },
+            {
+                question: "Smart parking primarily reduces traffic ______.",
+                options: ["mobility", "area", "analysis", "congestion"],
                 correctAnswer: 3,
                 week: 10
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "About Home Area Network (HAN), consider: I) Multi-protocol gateway bridges non-IP to IP. II) Wired HAN is low cost. III) Wireless HAN makes implementation easy. Which of these is correct?",
+                options: ["Only I", "I and II only", "I and III only", "I, II, and III"],
                 correctAnswer: 3,
                 week: 10
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Which statements about smart health are true? I) Low-cost and portable II) Allows remote check-ups and diagnosis III) Effortless health monitoring",
+                options: ["I only", "II only", "I, II, and III", "None of these"],
+                correctAnswer: 2,
+                week: 10
+            },
+            {
+                question: "Phases of Intelligent Connected Vehicle (ICV) development include:",
+                options: ["Based on 2G", "Based on 4G LTE", "Both a and b", "None of these"],
+                correctAnswer: 2,
+                week: 10
+            },
+            {
+                question: "In the Ad-hoc domain of VANET, vehicles are:",
+                options: ["Stationary", "Mobile", "Fixed to RSUs only", "None of these"],
+                correctAnswer: 1,
+                week: 10
+            },
+            {
+                question: "Domains of VANET include:",
+                options: ["In-vehicle and ad-hoc", "Ad-hoc and data center", "Data center", "None of these"],
+                correctAnswer: 0,
+                week: 10
+            },
+            {
+                question: "At which data fusion stage are multiple classifier outputs combined?",
+                options: ["Pixel level", "Feature level", "Signal level", "Decision level"],
                 correctAnswer: 3,
                 week: 10
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "The Body & Brain Architecture consists of how many layers?",
+                options: ["1", "2", "3", "4"],
+                correctAnswer: 2,
                 week: 10
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "Which statement about smart home infrastructure is correct?",
+                options: ["It cannot include wireless devices.", "It may include wired and/or wireless devices.", "It must be wireless-only.", "None of these"],
+                correctAnswer: 1,
                 week: 10
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "Intelligent Connected Vehicles (ICV) communication is based on:",
+                options: ["Dedicated Short Range Communication", "Directed Short Range Communication", "Dedicated Small Range Communication", "All of these"],
+                correctAnswer: 0,
                 week: 10
             },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 10
-            },
-            {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 10
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 10
-            },
-            {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 10
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 10
-            },
-            {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 10
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 10
-            },
-            {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 10
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 10
-            },
-            
+
             // Week 11
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "What are some of the other names of the smart grids?",
+                options: ["Energy internet", "Electricity with a hand", "Electrolyte", "All of these"],
+                correctAnswer: 0,
+                week: 11
+            },
+            {
+                question: "Which of the following is not done in traditional electrical grids?",
+                options: ["Manual energy monitoring", "Unidirectional energy distribution", "Unidirectional communication", "Distributed power plants"],
                 correctAnswer: 3,
                 week: 11
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Which of the following is a benefit associated with smart grids for customers?",
+                options: ["Reduced transmission of electricity", "Higher electricity rates", "Less security", "Different pricing options"],
                 correctAnswer: 3,
                 week: 11
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Fill in the blank. ______ samples voltage and current with a fixed sample rate at the installed location.",
+                options: ["PEVs", "DAUs", "PMUs", "None of these"],
+                correctAnswer: 2,
+                week: 11
+            },
+            {
+                question: "Which of the following statements are true about MDMSs? Statement I: Decide the price per unit energy to be paid by the customers Statement II: Handled by the energy service providers Statement III: Aggregate the energy consumption or energy request of certain geographical area",
+                options: ["Statements I and II", "Statements I and III", "Statements II and III", "Statements I, II and III"],
+                correctAnswer: 0,
+                week: 11
+            },
+            {
+                question: "Which of the following aggregate the energy consumption or energy request of a certain geographical area?",
+                options: ["DAUs", "Meter Data Management System", "Buffer", "None of these"],
+                correctAnswer: 0,
+                week: 11
+            },
+            {
+                question: "Which of the following statements are true about Dynamic System Attacks? Statement I: Replay attacks compromises sensors and monitors their outputs. Statement II: D-DIA can lead to a system collapse. Statement III: Covert attack is a closed loop version of replay attacks.",
+                options: ["Statements I and II", "Statements I and III", "Statements II and III", "Statement I, II and III"],
                 correctAnswer: 3,
                 week: 11
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Fill in the blank. ______ is performed by compromising the availability of the grid component.",
+                options: ["Gateway", "Data injection attacks", "AMH", "Denial of service"],
                 correctAnswer: 3,
                 week: 11
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Fill in the blank. ______ is a primary challenge in IIoT.",
+                options: ["Worker health and safety", "Optimised operations", "Regulatory compliance", "Integrate existing infrastructure into new IIoT infrastructure"],
                 correctAnswer: 3,
                 week: 11
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Fill in the blank. ______ is based on a wrap and re-use approach.",
+                options: ["AoT", "PoT", "ToII", "IIoT"],
                 correctAnswer: 3,
                 week: 11
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Mechanized production is a part of the 4th Industrial Revolution.",
+                options: ["True", "False"],
+                correctAnswer: 1,
+                week: 11
+            },
+            {
+                question: "Which of the following happened in the 3rd Revolution?",
+                options: ["Mass production", "IIoT", "Mechanized production", "None of these"],
                 correctAnswer: 3,
                 week: 11
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Which of the following is not a vulnerability of Smart Grid?",
+                options: ["Integrity", "Physical threats", "Dynamic system attacks", "None of these"],
                 correctAnswer: 3,
                 week: 11
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "Big data is characterized by 7 Vs.",
+                options: ["True", "False"],
+                correctAnswer: 0,
                 week: 11
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "What is the Flow of data?",
+                options: ["Acquisition>Generation>Storage>Analysis", "Generation>Storage>Analysis>Acquisition", "Generation>Acquisition>Storage>Analysis", "None of these"],
+                correctAnswer: 2,
                 week: 11
             },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 11
-            },
-            {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 11
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 11
-            },
-            {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 11
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 11
-            },
-            
+
             // Week 12
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "The two types of data analysis are ______.",
+                options: ["Qualitative and Quantitative", "Repetitive and Quantitative", "Repetitive and Qualitative", "All of these"],
+                correctAnswer: 0,
+                week: 12
+            },
+            {
+                question: "Fill in the blank. To perform an ANOVA, we must have a ______ response variable and at least one ______ factor.",
+                options: ["Discrete, categorical", "Continuous, quantitative", "Discrete, quantitative", "Continuous, categorical"],
                 correctAnswer: 3,
                 week: 12
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "Select the statement(s) that denote the type of ANOVA. Statement I: One way analysis Statement II: Two way analysis Statement III: K-way analysis",
+                options: ["Statement I", "Statement II", "Statements I, II, and III", "None of these"],
+                correctAnswer: 2,
+                week: 12
+            },
+            {
+                question: "What is the type of the data dispersion?",
+                options: ["Range", "Average absolute deviation", "Variance", "All of these"],
                 correctAnswer: 3,
                 week: 12
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "The two most relevant sensors directly used in agricultures are ______.",
+                options: ["Soil moisture and proximity sensor", "Soil moisture and water level sensor", "ECG sensor and water level sensor", "All of these"],
+                correctAnswer: 1,
+                week: 12
+            },
+            {
+                question: "The mathematical equation that is formulated in the form of relationships between variables is known as ______.",
+                options: ["Logical model", "Relational model", "Data dispersion", "Statistical model"],
                 correctAnswer: 3,
                 week: 12
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
+                question: "What are the two types of statistical models?",
+                options: ["Qualitative and quantitative", "Complete and incomplete", "Regression and dispersion", "None of these"],
+                correctAnswer: 1,
+                week: 12
+            },
+            {
+                question: "Select the correct order of the component layers present in the IoT healthcare.",
+                options: ["Sensing layer, cloud platform layer, aggregated layer, processing layer", "Sensing layer, aggregated layer, processing layer, cloud platform layer", "Aggregated layer, sensing layer, processing layer, cloud platform layer", "Sensing layer, processing layer, aggregated layer, cloud platform layer"],
+                correctAnswer: 1,
+                week: 12
+            },
+            {
+                question: "Wireless IoT driven solutions for remote healthcare facility provisioning brings healthcare to patients than bringing patients to healthcare.",
+                options: ["True", "False"],
+                correctAnswer: 0,
+                week: 12
+            },
+            {
+                question: "Which of the following handheld devices are used for activity monitoring?",
+                options: ["EEG and GPS", "Accelerometer and EEG", "Accelerometer and GPS", "All of these"],
+                correctAnswer: 2,
+                week: 12
+            },
+            {
+                question: "Which of the following are components of IoT?",
+                options: ["Sensing layer", "Aggregated layer", "Processing layer", "All of these"],
                 correctAnswer: 3,
                 week: 12
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "By performing continuous monitoring of a person's activity, it is not possible to observe his/her behavior or to identify any repetitive pattern in his/her day-to-day activity.",
+                options: ["True", "False"],
+                correctAnswer: 1,
                 week: 12
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "Deep learning based data analysis cannot be performed on videos",
+                options: ["True", "False"],
+                correctAnswer: 1,
                 week: 12
             },
             {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "Which of the following are the inbuilt sensors that are present in high end smartphones?",
+                options: ["ECG and EEG", "Accelerometer, proximity sensor, and EEG", "Accelerometer, Compass, and Gyroscope", "Pressure sensor and NPK sensor"],
+                correctAnswer: 2,
                 week: 12
             },
             {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 12
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 12
-            },
-            {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 12
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 12
-            },
-            {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 12
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 12
-            },
-            {
-                question: "Which among the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
-                week: 12
-            },
-            {
-                question: "Which of the following is a valid example of a IoT Platform?",
-                options: ["OpenStack", "OpenDayLight", "OpenVirteX", "OpenIoT"],
-                correctAnswer: 3,
+                question: "Fill in the blank. Processing the handheld activity device data with artificial intelligence can be used for ______.",
+                options: ["Fall detection", "Heart rate detection", "Vehicle detection", "All of these"],
+                correctAnswer: 0,
                 week: 12
             }
         ];
@@ -1317,43 +1321,43 @@
         function initQuiz() {
             const quizForm = document.getElementById('quizForm');
             const shuffledMCQs = shuffleArray([...mcqData]);
-            
+
             // Display all questions
             shuffledMCQs.forEach((mcq, index) => {
                 const questionCard = document.createElement('div');
                 questionCard.className = 'question-card';
-                
+
                 const questionText = document.createElement('div');
                 questionText.className = 'question-text';
                 questionText.textContent = `${index + 1}. ${mcq.question}`;
-                
+
                 const optionsContainer = document.createElement('div');
                 optionsContainer.className = 'options';
-                
+
                 mcq.options.forEach((option, optionIndex) => {
                     const optionDiv = document.createElement('div');
                     optionDiv.className = 'option';
-                    
+
                     const input = document.createElement('input');
                     input.type = 'radio';
                     input.name = `question-${index}`;
                     input.value = optionIndex;
                     input.id = `question-${index}-option-${optionIndex}`;
-                    
+
                     const label = document.createElement('label');
                     label.htmlFor = `question-${index}-option-${optionIndex}`;
                     label.textContent = option;
-                    
+
                     optionDiv.appendChild(input);
                     optionDiv.appendChild(label);
                     optionsContainer.appendChild(optionDiv);
                 });
-                
+
                 const correctAnswerDiv = document.createElement('div');
                 correctAnswerDiv.className = 'correct-answer';
                 correctAnswerDiv.id = `correct-answer-${index}`;
                 correctAnswerDiv.innerHTML = `<span class="correct">Correct Answer: ${mcq.options[mcq.correctAnswer]}</span>`;
-                
+
                 questionCard.appendChild(questionText);
                 questionCard.appendChild(optionsContainer);
                 questionCard.appendChild(correctAnswerDiv);
@@ -1365,28 +1369,28 @@
         function calculateScore() {
             let score = 0;
             const totalQuestions = mcqData.length;
-            
+
             mcqData.forEach((mcq, index) => {
                 const selectedOption = document.querySelector(`input[name="question-${index}"]:checked`);
                 const correctAnswerDiv = document.getElementById(`correct-answer-${index}`);
-                
+
                 if (selectedOption) {
                     if (parseInt(selectedOption.value) === mcq.correctAnswer) {
                         score++;
                     }
                 }
-                
+
                 // Show correct answer for each question
                 correctAnswerDiv.style.display = 'block';
             });
-            
+
             // Display score
             const scoreContainer = document.getElementById('scoreContainer');
             const scoreDisplay = document.getElementById('scoreDisplay');
             const scoreText = document.getElementById('scoreText');
-            
+
             scoreDisplay.textContent = `${score}/${totalQuestions}`;
-            
+
             let percentage = (score / totalQuestions) * 100;
             if (percentage >= 80) {
                 scoreText.textContent = 'Excellent! You have a great understanding of IoT concepts.';
@@ -1397,9 +1401,9 @@
             } else {
                 scoreText.textContent = 'Keep studying! You need to review IoT concepts more thoroughly.';
             }
-            
+
             scoreContainer.style.display = 'block';
-            
+
             // Scroll to top to show score
             window.scrollTo(0, 0);
         }
@@ -1411,4 +1415,5 @@
         window.onload = initQuiz;
     </script>
 </body>
+
 </html>
